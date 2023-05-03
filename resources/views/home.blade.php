@@ -91,7 +91,7 @@
 
 
                     @elsecan('admin')
-                        Area do Administrador
+                        Area do Administrador menu
                     @endcan
 
                 </div>

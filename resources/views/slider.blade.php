@@ -10,7 +10,7 @@
         </div>
     @endif
     @can('aluno')
-        Dados do Aluno
+
     @elsecan('admin')
         <div class="container">
             <div class="row justify-content-center">

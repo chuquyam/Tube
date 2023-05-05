@@ -7,8 +7,15 @@ use App\Models\concursos;
 
 
 class ConcursoController extends Controller
+
 {
+    //antes de acrescentar precisa estar logado
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     //
+
     public function create()
     {
         return view('criarconcurso');

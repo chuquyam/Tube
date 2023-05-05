@@ -9,7 +9,14 @@ use Illuminate\Support\Facades\File;
 
 
 class SliderController extends Controller
+
 {
+       //antes de acrescentar precisa estar logado
+       public function __construct()
+       {
+           $this->middleware('auth');
+       }
+       //
 
     public function index(){
         $slider = Slider::all();
